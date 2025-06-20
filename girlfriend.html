@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Typewriter Panel</title>
+    <link rel="stylesheet" href="girlfriend.css" />
+</head>
+
+<body>
+    <div class="container">
+        <img src="calendar.jpg" alt="Calendar Icon" class="top-right-image" />
+        <div class="left-panel">
+            <a href="#" data-key="home">Home</a>
+            <a class="left-space" href="#" data-key="about">About</a>
+            <a href="#" class="left-space" data-key="contact">Contact</a>
+            <a href="#" class="left-space" id="show-countdown-link">Birthday Countdown</a>
+        </div>
+        <div>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search..." />
+                <button id="search-button">🔍</button>
+            </div>
+            <div class="tabs">
+                <a class="color" href="#" data-key="home">Home</a>
+                <a class="color space" href="#" data-key="about">About</a>
+                <a class="color" href="#" data-key="contact">Contact</a>
+            </div>
+
+        </div>
+        <div class="right-content">
+            <div id="countdown-wrapper">
+                <div id="countdown-title">Days left to cut the cake!!!!</div>
+                <div id="countdown-container">
+                    <div class="countdown-box">
+                        <span id="days">--</span><br>
+                        <label>Days</label>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="hours">--</span><br>
+                        <label>Hours</label>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="minutes">--</span><br>
+                        <label>Minutes</label>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="seconds">--</span><br>
+                        <label>Seconds</label>
+                    </div>
+                </div>
+            </div>
+            <div class="background-dimmer" id="background-dimmer"></div>
+            <div id="display-area"></div>
+            <div id="image-container"></div>
+        </div>
+    </div>
+    <script src="girlfriend.js"></script>
+</body>
+
+</html>

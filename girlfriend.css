@@ -1,0 +1,225 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-image: url('dark.jpg');
+    background-size: contain;
+    font-family: Arial, sans-serif;
+}
+.top-right-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 234px;   /* Adjust as needed */
+  height: 180px;  /* Adjust as needed */
+  z-index: 1000; /* Make sure it stays above other content */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel {
+    width: 180px;
+    height: 100vh;
+    /* Full vertical height */
+    background-color: rgba(204, 204, 204, 0.8);
+    /* Light grey with 80% opacity */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.left-panel a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.right-content {
+    color: white;
+    text-align: center;
+    margin-top: 300px;
+}
+/* .text-content{
+    color: white;
+    text-align: center;
+    margin-top:300px;
+} */
+
+#display-area {
+    max-width: 800px;
+    width: fit-content;
+    white-space: pre-wrap;
+    font-size: 24px;
+    backdrop-filter: blur(8px); /* this does the blur */
+    -webkit-backdrop-filter: blur(8px); /* for Safari */
+    /* padding-top: 120px;
+  padding-bottom: 120px;
+  margin-left: 250px; */
+}
+
+.search-container {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  width: 80%;         /* or try 500px for fixed width */
+  max-width: 600px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#search-input {
+  flex: 1;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+#search-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+.tabs {
+
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.space {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.left-space{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.color {
+    color: white;
+}
+
+.background-dimmer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* translucent black */
+  z-index: 1;
+  display: none; /* hidden by default */
+}
+
+.display-area{
+  position: relative;
+  z-index: 2; /* keep text above the dimmer */
+  white-space: pre-wrap;       /* Respect spaces & line breaks */
+  word-break: normal;          /* Prevent breaking within words */
+  overflow-wrap: break-word;   /* Break only at word boundaries */
+  line-height: 1.5;
+}
+.search-container,
+.extra-links {
+  position: relative;
+  z-index: 2; /* keep text above the dimmer */
+}
+@keyframes fadeInCharacter {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.char-span {
+  display: inline;
+  animation: fadeInCharacter 0.3s ease;
+}
+#image-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#image-container img {
+  width: auto;
+  height: auto;
+  max-height: 200px;
+  border-radius: 8px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+#countdown-wrapper {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 9999;
+  /* Initially hidden via inline style */
+}
+
+#countdown-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+#countdown-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.countdown-box {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  border-radius: 6px;
+  min-width: 40px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.countdown-box span {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+}
+
+.countdown-box label {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+
+
+
+

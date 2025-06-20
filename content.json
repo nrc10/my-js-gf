@@ -1,0 +1,9 @@
+{
+  "home": "Welcome to the Home Page! Here is a long paragraph about the site...",
+  "about": "This is the About Page. It tells you more about who we are and what we do.",
+  "contact": "Contact us at example@example.com or call 123-456-7890. We'd love to hear from you!",
+  "How much do you love me?":{
+    "text": "How much do I love you? More than words could ever describe. It’s not about how much — it’s about how deeply, how honestly, and how completely I love you. If I had to measure it, I’d say it’s like the sky — endless, constant, and always there, even when you don’t see it. If love were numbers, I’d need infinity, and even then, math would probably give up trying to keep up. The truth is, my love for you makes me want to be better, to give you the best of me, every single day. That’s how much — and more.",
+    "image": "calendar.jpg"
+  }
+}
